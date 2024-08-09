@@ -1,37 +1,57 @@
-body{
+body {
     background-color: #050505;
-    font-family:monospace ;
+    font-family: monospace;
     padding: 24px;
-    color:rgb(11, 55, 251)
+    color: rgb(11, 55, 251);
 }
 
-.title{
+.title {
     font-size: 48px;
     color: #08ed0c;
 }
 
-.list-item{
+.list-item {
     margin-bottom: 24px;
     font-size: 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
-input{
+.list-item button.delete-task-button {
+    background-color: red;
+    border: none;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 4px;
+    padding: 4px 8px;
+}
+
+input {
     height: 32px;
-    background-color: transparent;
-    color:white;
     background-color: #cbcecb;
+    color: white;
     border-radius: 4px;
     font-size: 16px;
     padding: 8px;
+    border: none;
+    margin-right: 8px;
 }
 
-.add-task-button{
+.add-task-button {
     font-size: 16px;
     padding: 16px;
     background-color: rgb(61, 26, 215);
-    border-width: 0px;
-    color:white;
+    border: none;
+    color: white;
     font-weight: bold;
     font-family: monospace;
+    cursor: pointer;
+    border-radius: 4px;
 }
 
+.add-task-button:hover,
+.delete-task-button:hover {
+    background-color: rgb(85, 44, 232);
+}
