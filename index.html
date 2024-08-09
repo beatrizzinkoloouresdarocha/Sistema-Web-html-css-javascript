@@ -1,12 +1,32 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lista de tarefas</title>
+    <title>Lista de Tarefas</title>
     <link rel="stylesheet" href="main.css">
+    <script src="main.js" defer></script>
 </head>
 <body>
-    <button></button>
+    <div>
+        <h1>Lista de Tarefas</h1>
+        <h2 class="title">Tarefas do dia 28 de julho</h2>
+        <ul>
+            <li class="list-item">Estudar programação</li>
+            <li class="list-item">Comprar equipamentos para computador</li>
+            <li class="list-item">Revisar playlist de Javascript</li>
+        </ul>
+    </div>
+    <div>
+        <input
+            type="text"
+            id="task_name"
+            name="task_name" 
+            placeholder="Nome da Tarefa"
+            aria-label="Nome da Tarefa"
+        />
+        <button class="add-task-button">Adicionar</button>
+    </div>
 </body>
 </html>
